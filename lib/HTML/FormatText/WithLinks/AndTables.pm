@@ -134,7 +134,7 @@ sub _format_tables {
             for my $tr (@trs) { # *** 1st pass over rows
                 $max_col_heights[$row_count] = 0;
                 $col_lines[$row_count] = [];
-                my @cols = $tr->look_down(_tag=>'td'); # no support for <th>. sorry.
+                my @cols = $tr->look_down(_tag=>qr/^(td|th)$/); # no support for <th>. sorry.
                 for (my $i = 0; $i < scalar @cols; $i++) {
                     my $td = $cols[$i]->clone;
                     my $new_tree = HTML::TreeBuilder->new;
@@ -167,7 +167,7 @@ sub _format_tables {
         SECOND_PASS: {
             my $row_count = 0; # obviously, another counter...
             for my $tr (@trs) { # *** 2nd pass over rows
-                my @cols = $tr->look_down(_tag=>'td'); # no support for <th>. sorry.
+                my @cols = $tr->look_down(_tag=>qr/^(td|th)$/); # no support for <th>. sorry.
 
                 my $row_text; # the final string representing each row of reformatted text
 
