@@ -1,0 +1,50 @@
+HTML-FormatText-WithLinks-AndTables
+
+This module was inspired by HTML::FormatText::WithLinks which has proven to be a
+useful `lynx -dump` work-alike. However one frustration was that no other HTML
+converters I came across had the ability to deal affectively with HTML <TABLE>s.
+This module can in a rudimentary sense do so. The aim was to provide facility to take
+a simple HTML based email template, and to also convert it to text with the <TABLE>
+structure in tact for inclusion as "multipart/alternative" content. Further, it will
+preserve both the formatting specified by the <TD> tag's "align" attribute, and will
+also preserve multiline text inside of a <TD> element provided it is broken using <BR/>
+tags.
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+	perl Makefile.PL
+	make
+	make test
+	make install
+
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc HTML::FormatText::WithLinks::AndTables
+
+You can also look for information at:
+
+    RT, CPAN's request tracker
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=HTML-FormatText-WithLinks-AndTables
+
+    AnnoCPAN, Annotated CPAN documentation
+        http://annocpan.org/dist/HTML-FormatText-WithLinks-AndTables
+
+    CPAN Ratings
+        http://cpanratings.perl.org/d/HTML-FormatText-WithLinks-AndTables
+
+    Search CPAN
+        http://search.cpan.org/dist/HTML-FormatText-WithLinks-AndTables
+
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2008 Shaun Fryer
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+
