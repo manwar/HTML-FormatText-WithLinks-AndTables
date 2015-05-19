@@ -214,7 +214,9 @@ sub _format_tables {
                 }
                 # put the fully formatted text into our accumulator
                 $formatted_tables->[$table_count]->[$row_count] = $row_text;
-                $cols[0]->content->[0] = "__TOKEN__${table_count}__${row_count}__"; # place a token into the row at col 0
+                if (scalar @cols) {
+                   $cols[0]->content->[0] = "__TOKEN__${table_count}__${row_count}__"; # place a token into the row at col 0
+                }
                 $row_count++;
             }
         }
