@@ -228,7 +228,9 @@ sub _format_tables {
             my $token = "__TOKEN__${i}__${j}__";
             $token .= "\n?" if $no_rowspacing;
             my $new_text = $$formatted_tables[$i][$j];
-            $text =~ s/$token/$new_text/;
+            if (defined $new_text) {
+               $text =~ s/$token/$new_text/;
+            }
         }
     }
 
