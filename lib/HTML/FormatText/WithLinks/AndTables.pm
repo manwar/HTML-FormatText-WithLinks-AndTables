@@ -349,6 +349,8 @@ L<http://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants>
 
 Copyright 2008 Shaun Fryer, all rights reserved.
 
+Copyright 2015 Dale Evans, all rights reserved
+
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
 
