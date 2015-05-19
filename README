@@ -2,9 +2,6 @@ NAME
     HTML::FormatText::WithLinks::AndTables - Converts HTML to Text with
     tables intact
 
-VERSION
-    Version 0.01
-
 SYNOPSIS
         use HTML::FormatText::WithLinks::AndTables;
 
@@ -79,7 +76,7 @@ SEE ALSO
         HTML::TreeBuilder
 
 CAVEATS
-        * This does not handle <TH> elements whatsoever!
+        * <TH> elements are treated identically to <TD> elements
 
         * It assumes a fixed width font for display of resulting text.
 

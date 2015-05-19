@@ -282,7 +282,7 @@ Given the HTML below ...
 
 =head1 CAVEATS
 
-    * This does not handle <TH> elements whatsoever!
+    * <TH> elements are treated identically to <TD> elements
 
     * It assumes a fixed width font for display of resulting text.
 
