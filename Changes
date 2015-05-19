@@ -1,5 +1,7 @@
 Revision history for HTML-FormatText-WithLinks-AndTables
 
+0.04    Tue 19 May 2015
+        Documentation fix.
 0.03    Tue 19 May 2015
         New maintainer, Dale Evans http://search.cpan.org/~daleevans/
         Handle table headers <th> by treating them like <td> (patch from Alex Aminoff, NBER)
