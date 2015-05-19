@@ -15,7 +15,7 @@ my $no_rowspacing   = 0; # boolean, suppress space between table rows and rows w
 
 =head1 NAME
 
-HTML::FormatText::WithLinks::AndTables - Converts HTML to Text with tables in tact
+HTML::FormatText::WithLinks::AndTables - Converts HTML to Text with tables intact
 
 =head1 VERSION
 
@@ -47,7 +47,7 @@ useful `lynx -dump` work-alike. However one frustration was that no other HTML
 converters I came across had the ability to deal affectively with HTML <TABLE>s.
 This module can in a rudimentary sense do so. The aim was to provide facility to take
 a simple HTML based email template, and to also convert it to text with the <TABLE>
-structure in tact for inclusion as "multipart/alternative" content. Further, it will
+structure intact for inclusion as "multipart/alternative" content. Further, it will
 preserve both the formatting specified by the <TD> tag's "align" attribute, and will
 also preserve multiline text inside of a <TD> element provided it is broken using <BR/>
 tags.
