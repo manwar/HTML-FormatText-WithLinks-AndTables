@@ -17,13 +17,7 @@ my $no_rowspacing   = 0; # boolean, suppress space between table rows and rows w
 
 HTML::FormatText::WithLinks::AndTables - Converts HTML to Text with tables intact
 
-=head1 VERSION
-
-Version 0.01
-
 =cut
-
-our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 
