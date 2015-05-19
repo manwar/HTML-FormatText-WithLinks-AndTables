@@ -296,7 +296,9 @@ Given the HTML below ...
 
 =head1 AUTHOR
 
-Shaun Fryer, C<< <pause.cpan.org at sourcery.ca> >>
+Shaun Fryer, C<< <pause.cpan.org at sourcery.ca> >> (author emeritus)
+
+Dale Evans, C<< <daleevans at cpan.org> >> (current maintainer)
 
 =head1 BUGS
 
@@ -350,6 +352,7 @@ Copyright 2008 Shaun Fryer, all rights reserved.
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
 
+=for Pod::Coverage configure
 
 =cut
 
