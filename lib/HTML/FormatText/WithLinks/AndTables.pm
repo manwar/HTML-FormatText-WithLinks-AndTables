@@ -23,7 +23,7 @@ Version 0.01
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 
@@ -180,7 +180,9 @@ sub _format_tables {
                     my $new_line;
                     for (my $i = 0; $i < scalar @cols; $i++) { # here are the actual <td> elements we're iterating over...
                         my $width = $max_col_width[$i] + $cellpadding; # how wide is this column of text
-                        my $line = $col_lines[$row_count]->[$i]->[$j] || ''; # get the text to fit into it
+                        my $line = $col_lines[$row_count]->[$i]->[$j]; # get the text to fit into it
+                        $line = defined $line ? $line : '';
+
                         # strip the whitespace from beginning and end of each line
                         $line =~ s/^\s+//gs;
                         $line =~ s/\s+\z//gs;

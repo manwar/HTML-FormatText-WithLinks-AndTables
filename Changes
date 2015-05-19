@@ -1,5 +1,8 @@
 Revision history for HTML-FormatText-WithLinks-AndTables
 
+0.02    Thu 7 Jun 2012
+        Modified so content text of "0" prints properly
+
 0.01    Wed 10 Dec 2008
         First version, released on an unsuspecting world.
 
