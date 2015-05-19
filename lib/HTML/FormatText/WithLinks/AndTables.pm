@@ -94,7 +94,7 @@ sub parse {
     my $self = shift;
     my $html = shift;
 
-    return undef unless defined $html;
+    return unless defined $html;
     return '' if $html eq '';
 
     my $tree = HTML::TreeBuilder->new->parse( $html );
