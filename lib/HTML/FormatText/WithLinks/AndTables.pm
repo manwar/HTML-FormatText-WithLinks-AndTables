@@ -227,6 +227,9 @@ sub _format_tables {
             if (defined $new_text) {
                $text =~ s/$token/$new_text/;
             }
+            else {
+               $text =~ s/$token//;
+            }
         }
     }
 
