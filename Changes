@@ -2,6 +2,7 @@ Revision history for HTML-FormatText-WithLinks-AndTables
 
 0.06    Tue 21 May 2015
         Fixed usage of Dist::Zilla::Plugin::OurPkgVersion so that MetaCPAN will hopefully accept this version
+        Fixed issue with custom formatting parameters not being passed around properly.
 0.05    Tue 21 May 2015
         Fixed bug with empty <td> tags.
 0.04    Tue 19 May 2015
