@@ -12,4 +12,6 @@ my $text = HTML::FormatText::WithLinks::AndTables->convert($html, {rm=>80,cellpa
 my $expected = '     header1
 
 ';
+#print "expected: $expected\n";
+#print "got: $text\n";
 ok($expected eq $text,"table header displayed");

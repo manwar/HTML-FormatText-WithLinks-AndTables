@@ -81,7 +81,10 @@ sub convert {
 
 # sub-class configure
 sub configure {
-    shift()->SUPER::configure($conf_defaults);
+# SUPER::configure actually modifies the hash, so we need to pass a copy
+    my %configure = %$conf_defaults;
+
+    shift()->SUPER::configure(\%configure);
 }
 
 # sub-class parse
@@ -137,7 +140,7 @@ sub _format_tables {
                     $new_tree->{_content} = [ $td ];
                     # parse the contents of the td into text
                     # this doesn't work well with nested tables...
-                    my $text = $self->_parse($new_tree);
+                    my $text = __PACKAGE__->new->_parse($new_tree);
                     # we don't want leading or tailing whitespace
                     $text =~ s/^\s+//s;
                     $text =~ s/\s+\z//s;
