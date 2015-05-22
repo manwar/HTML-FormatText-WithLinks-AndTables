@@ -135,7 +135,7 @@ sub _format_tables {
                     $new_tree->{_content} = [ $td ];
                     # parse the contents of the td into text
                     # this doesn't work well with nested tables...
-                    my $text = __PACKAGE__->new->_parse($new_tree);
+                    my $text = $self->_parse($new_tree);
                     # we don't want leading or tailing whitespace
                     $text =~ s/^\s+//s;
                     $text =~ s/\s+\z//s;
