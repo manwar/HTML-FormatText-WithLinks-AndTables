@@ -3,6 +3,8 @@ package HTML::FormatText::WithLinks::AndTables;
 use strict;
 use warnings;
 
+# VERSION
+
 use base 'HTML::FormatText::WithLinks';
 use HTML::TreeBuilder;
 
