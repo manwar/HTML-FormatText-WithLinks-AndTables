@@ -142,6 +142,7 @@ sub _format_tables {
                     # this doesn't work well with nested tables...
                     my $text = __PACKAGE__->new->_parse($new_tree);
                     # we don't want leading or tailing whitespace
+                    $text =~ s/\xA0+/ /s; # &nbsp -> space
                     $text =~ s/^\s+//s;
                     $text =~ s/\s+\z//s;
                     # now we figure out the maximum widths and heights needed for each column
